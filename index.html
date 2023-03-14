@@ -9,6 +9,12 @@
       content="Assistencia Técnica Especializada para computadores e celulares na região de Nova Odessa"
     />
     <title>PA Informática - Assistencia Tecnica</title>
+    <!-- SWIPER -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
   </head>
   <body>
     <nav id="navbar">
@@ -23,7 +29,7 @@
           <a href="#servicos">Serviços</a>
         </li>
         <li>
-          <a href="#depoimentos">Depoimentos</a>
+          <a href="#testimonial">Depoimentos</a>
         </li>
         <li>
           <a href="#sobre">Sobre</a>
@@ -62,7 +68,7 @@
     <section id="servicos">
       <div class="wrapper">
         <h2>Serviços</h2>
-        <h3>Como eu posso te ajudar:</h3>
+        <h3>Como eu posso te ajudar</h3>
         <div class="services-cards">
           <div class="services-card">
             <img
@@ -115,5 +121,74 @@
         </div>
       </div>
     </section>
+    <section id="testimonial">
+      <div class="wrapper">
+        <h2>Depoimentos</h2>
+        <h3>O que os clientes dizem sobre meus serviços</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="carousel-card-image"
+                src="./assets/cliente-1.jpg"
+                alt="Foto de um cliente"
+              />
+              <h5 class="carousel-card-title">Murilo Bueno</h5>
+              <p class="carousel-card-description">
+                Já formatei e montei meu pc várias vezes na P. A. Informática
+                sempre fui muito bem atendido, muito bem instruído sobre meus
+                hardwares e software, agilidade no atendimento e muita
+                qualidade. Recomendo pois sempre foi um serviço muito bom
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="carousel-card-image"
+                src="./assets/cliente-2.jpg"
+                alt="Foto de um cliente"
+              />
+              <h5 class="carousel-card-title">Bruno Henrique</h5>
+              <p class="carousel-card-description">
+                Sobre a assistência do Pablo eu gostei, comunicação boa, ótimo
+                atendimento e assistência muito boa,entrega seu trabalho no
+                prazo endico ele pra todos meus amigos e parentes, excelente
+                profissional
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="carousel-card-image"
+                src="./assets/cliente-3.jpg"
+                alt="Foto de um cliente"
+              />
+              <h5 class="carousel-card-title">Jesse Springman</h5>
+              <p class="carousel-card-description">
+                Então, só tenho agradecer a seu trabalho bem feito no meu
+                notebook, melhorou100% e um preço muito em conta
+              </p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-container">
+      <p class="contact-container-description">
+        Deixe-me cuidar dos seus dispositivos para que você possa se concentrar
+        no que é realmente importante.
+      </p>
+      <a href="" class="btn btn-filled-white">
+        <img src="" alt="" />
+        Fazer orçamento
+      </a>
+    </div>
   </body>
 </html>
