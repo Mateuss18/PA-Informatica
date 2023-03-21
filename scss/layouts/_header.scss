@@ -1,0 +1,52 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+#header {
+  background-color: variables.$blue-300;
+  margin-top: 69.54px;
+
+  .wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+
+    .header-content {
+      width: 55.643%;
+
+      &-message {
+        color: variables.$blue-600;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        color: variables.$blue-text-h2;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      &-description {
+        color: variables.$blue-700;
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin: 47px 0 52px 0;
+      }
+
+      .btn-filled {
+        background-color: variables.$blue-600;
+        color: variables.$white;
+        border-color: variables.$blue-600;
+
+        &:hover {
+          border-color: variables.$blue-650;
+        }
+      }
+    }
+
+    .header-image {
+      width: 460px;
+    }
+  }
+}
