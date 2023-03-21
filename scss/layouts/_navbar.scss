@@ -1,0 +1,43 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+#navbar {
+  background-color: variables.$blue-300;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+
+    .logo {
+      cursor: pointer;
+      width: 12rem;
+      display: flex;
+    }
+
+    .menu {
+      display: flex;
+      gap: 12px;
+
+      li a {
+        padding: 8px 12px;
+        font-weight: 500;
+        color: variables.$blue-600;
+        transition: 400ms;
+
+        &:hover {
+          background-color: variables.$blue-600;
+          border-radius: 14px;
+          color: variables.$blue-100;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}
