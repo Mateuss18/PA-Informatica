@@ -1,0 +1,70 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+#services {
+  background-color: variables.$white-300;
+
+  .wrapper {
+    @include mixins.wrapperSection;
+
+    .services-cards {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+
+      &-card {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 350px;
+        border-radius: 8px;
+        padding: 32px;
+        background-color: variables.$blue-600;
+
+        img {
+          width: fit-content;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: variables.$white-200;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          color: variables.$white-100;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .brands-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-description {
+        text-align: center;
+        font-size: 1.25rem;
+        width: 48.125rem;
+        font-weight: 700;
+        color: variables.$black;
+        margin: 100px 0 60px 0;
+      }
+
+      .brands {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 50px;
+        width: 43.75rem;
+
+        img {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
