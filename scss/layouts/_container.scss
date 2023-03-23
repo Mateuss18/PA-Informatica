@@ -1,0 +1,41 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.container {
+  background-color: variables.$blue-600;
+  padding: 68px 105px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.09;
+    background-image: url("../../assets/placa-circuito.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  &-description {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 54%;
+    color: variables.$white;
+  }
+
+  .btn-filled-white {
+    background-color: variables.$white;
+    color: variables.$blue-600;
+    z-index: 1;
+  }
+}
