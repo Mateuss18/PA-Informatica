@@ -1,0 +1,31 @@
+@use "./variables";
+
+@mixin wrapper {
+  width: min(72rem, 100%);
+  margin-inline: auto;
+}
+
+@mixin wrapperSection {
+  width: min(72rem, 100%);
+  margin-inline: auto;
+  padding: 120px 1.5625rem;
+
+  h2 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: variables.$blue-600;
+    margin-bottom: 21px;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: variables.$blue-text-h3;
+    margin-bottom: 70px;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-weight: 700;
+  }
+}
