@@ -61,4 +61,10 @@
   bottom: 17px;
   right: 25px;
   z-index: 1;
+  transition: 450ms;
+
+  &:hover {
+    transition: 450ms;
+    transform: scale(0.9);
+  }
 }
