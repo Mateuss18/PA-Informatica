@@ -35,9 +35,11 @@ img {
   font-weight: 700;
   width: fit-content;
   cursor: pointer;
+  transition: 400ms;
 
   img {
-    width: 20px;
+    width: 24px;
+    transition: 400ms;
   }
 }
 
@@ -47,6 +49,14 @@ img {
   border-color: variables.$blue-600;
 
   &:hover {
-    border-color: variables.$blue-650;
+    background-color: variables.$white-100;
+    color: variables.$blue-600;
+    border-color: variables.$blue-600;
+    transition: 400ms;
+
+    img {
+      transition: 400ms;
+      filter: invert(32%) sepia(89%) saturate(1061%) hue-rotate(184deg) brightness(65%) contrast(91%);
+    }
   }
 }
