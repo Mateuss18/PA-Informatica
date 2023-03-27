@@ -10,8 +10,18 @@
     justify-content: space-between;
     padding: 149.54px 1.5625rem;
 
+    @include mixins.notebook {
+      flex-direction: column;
+      align-items: center;
+      gap: 96px;
+    }
+
     .header-content {
       width: 55.643%;
+
+      @include mixins.notebook {
+        width: fit-content;
+      }
 
       &-message {
         color: variables.$blue-600;
@@ -36,6 +46,10 @@
 
     .header-image {
       width: 460px;
+
+      @include mixins.notebook {
+        width: fit-content;
+      }
     }
   }
 }

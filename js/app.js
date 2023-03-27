@@ -30,13 +30,13 @@ const swiper = new Swiper(swiperCarousel, {
       slidesPerView: 2
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3
+    1024: {
+      slidesPerView: 2
     },
     // when window width is >= 640px
-    640: {
+    1025: {
       slidesPerView: 3,
-      spaceBetween: 40
+      spaceBetween: 35
     }
   }
 })

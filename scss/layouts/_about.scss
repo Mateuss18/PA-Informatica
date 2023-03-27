@@ -11,9 +11,17 @@
     align-items: center;
     gap: 6.25rem;
 
+    @include mixins.notebook {
+      flex-direction: column-reverse;
+    }
+
     .picture {
       width: 29.375rem;
       border-radius: 10px;
+
+      @include mixins.notebook {
+        width: fit-content;
+      }
     }
 
     .about-info {

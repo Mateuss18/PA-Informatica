@@ -12,6 +12,11 @@
   position: relative;
   top: 140px;
 
+  @include mixins.notebook {
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &:before {
     content: " ";
     display: block;
@@ -32,6 +37,10 @@
     font-weight: 700;
     width: 54%;
     color: variables.$white;
+
+    @include mixins.notebook {
+      width: fit-content;
+    }
   }
 
   .btn-filled-white {

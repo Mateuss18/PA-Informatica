@@ -11,6 +11,10 @@
     align-items: center;
     gap: 64px;
 
+    @include mixins.notebook {
+      flex-direction: column;
+    }
+
     .contact {
       &-info {
         h3 {
