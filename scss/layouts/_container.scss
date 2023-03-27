@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  top: 140px;
 
   &:before {
     content: " ";
@@ -37,5 +38,16 @@
     background-color: variables.$white;
     color: variables.$blue-600;
     z-index: 1;
+
+    &:hover {
+      background-color: variables.$blue-600;
+      color: variables.$white;
+      border-color: variables.$white;
+
+      img {
+        transition: 400ms;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(200%) contrast(102%);
+      }
+    }
   }
 }

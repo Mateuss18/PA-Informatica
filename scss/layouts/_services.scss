@@ -20,6 +20,12 @@
         border-radius: 8px;
         padding: 32px;
         background-color: variables.$blue-600;
+        transition: 450ms;
+
+        &:hover {
+          transition: 450ms;
+          transform: scale(1.05);
+        }
 
         img {
           width: fit-content;
@@ -63,6 +69,12 @@
 
         img {
           width: fit-content;
+          transition: 450ms;
+
+          &:hover {
+            transition: 450ms;
+            transform: scale(0.9);
+          }
         }
       }
     }

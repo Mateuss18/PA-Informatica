@@ -6,9 +6,11 @@
 
   .wrapper {
     @include mixins.wrapperSection;
+    padding-bottom: 0;
 
     .swiper {
       padding-bottom: 55px;
+
       .swiper-slide {
         display: flex;
         flex-direction: column;
@@ -17,6 +19,12 @@
         border-radius: 16px;
         padding: 32px;
         height: 420px;
+        border: solid 2px transparent;
+        transition: border 400ms;
+
+        &:hover {
+          border-color: variables.$blue-600;
+        }
 
         &-image {
           width: 130px;
