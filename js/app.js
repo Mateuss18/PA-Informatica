@@ -1,13 +1,25 @@
+window.addEventListener('scroll', showBackToTopButtonOnScroll)
+
+const backToTopButton = document.querySelector('.back-to-top')
+console.log(backToTopButton)
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 400) {
+    backToTopButton.classList.add('show')
+    backToTopButton.classList.remove('hidden')
+  } else {
+    backToTopButton.classList.remove('show')
+    backToTopButton.classList.add('hidden')
+  }
+}
+
 const swiperCarousel = document.querySelector('.swiper')
-console.log(swiperCarousel)
 const swiper = new Swiper(swiperCarousel, {
-  // Default parameters
   slidesPerView: 3,
   spaceBetween: 10,
-  // autoplay: {
-  //   delay: 5000,
-  //   pauseOnMouseEnter: true
-  // },
+  autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: true
+  },
   pagination: {
     el: '.swiper-pagination'
   },
