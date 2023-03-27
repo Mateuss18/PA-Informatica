@@ -6,17 +6,20 @@
 
   .wrapper {
     @include mixins.wrapperSection;
+    padding-top: 270px;
     display: flex;
+    align-items: center;
     gap: 6.25rem;
 
-    img {
-      width: fit-content;
+    .picture {
+      width: 29.375rem;
+      border-radius: 10px;
     }
 
     .about-info {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 40px;
 
       h2,
       h3 {
