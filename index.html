@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="./css/app.css" />
     <title>PA Informática - Assistencia Tecnica</title>
     <!-- SWIPER -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
     <nav id="navbar">
@@ -34,21 +35,24 @@
         </a>
         <ul class="menu">
           <li>
-            <a href="#inicio">Início</a>
+            <a href="#header">Início</a>
           </li>
           <li>
-            <a href="#servicos">Serviços</a>
+            <a href="#services">Serviços</a>
           </li>
           <li>
             <a href="#testimonial">Depoimentos</a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </div>
     </nav>
-    <header id="inicio">
+    <header id="header">
       <div class="wrapper">
         <div class="header-content">
           <p class="header-content-message">
@@ -76,173 +80,196 @@
         </div>
       </div>
     </header>
-    <section id="servicos">
-      <div class="wrapper">
-        <h2>Serviços</h2>
-        <h3>Como eu posso te ajudar</h3>
-        <div class="services-cards">
-          <div class="services-card">
-            <img
-              class="services-card-image"
-              src="./assets/notebook.svg"
-              alt="Ilustracao de um notebook aberto"
-            />
-            <h4 class="services-card-title">Reparo em PCs e Notebooks</h4>
-            <p class="services-card-description">
-              Limpeza de hardware’s e CPU Formatação, Instalação de SO,
-              Manutenção e Backup
-            </p>
-          </div>
-          <div class="services-card">
-            <img
-              class="services-card-image"
-              src="./assets/smartphone.svg"
-              alt="Ilustracao de um celular"
-            />
-            <h4 class="services-card-title">Reparo em Celulares e Tablets</h4>
-            <p class="services-card-description">
-              Troca de Tela (com ou sem display), Troca de bateria, capas e
-              películas, Manutenção e Backup
-            </p>
-          </div>
-        </div>
-        <div class="brands-container">
-          <p class="brands-container-description">
-            Atendimento especializado para dispositivos de uma variedade de
-            marcas com as últimas tecnologias e soluções, tais como:
-          </p>
-          <div class="brands">
-            <img src="./assets/logo-sony.svg" alt="Logo da empresa Sony" />
-            <img src="./assets/logo-lg.svg" alt="Logo da empresa LG" />
-            <img
-              src="./assets/logo-positivo.svg"
-              alt="Logo da empresa Positivo"
-            />
-            <img src="./assets/logo-apple.svg" alt="Logo da empresa Apple" />
-            <img src="./assets/logo-xiaomi.svg" alt="Logo da empresa Xiaomi" />
-            <img
-              src="./assets/logo-samsung.svg"
-              alt="Logo da empresa Samsung"
-            />
-            <img
-              src="./assets/logo-motorola.svg"
-              alt="Logo da empresa Motorola"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonial">
-      <div class="wrapper">
-        <h2>Depoimentos</h2>
-        <h3>O que os clientes dizem sobre meus serviços</h3>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+    <main>
+      <section id="services">
+        <div class="wrapper">
+          <h2>Serviços</h2>
+          <h3>Como posso te ajudar?</h3>
+          <div class="services-cards">
+            <div class="services-cards-card">
               <img
-                class="carousel-card-image"
-                src="./assets/cliente-1.jpg"
-                alt="Foto de um cliente"
+                class="services-card-image"
+                src="./assets/notebook.svg"
+                alt="Ilustracao de um notebook aberto"
               />
-              <h5 class="carousel-card-title">Murilo Bueno</h5>
-              <p class="carousel-card-description">
-                Já formatei e montei meu pc várias vezes na P. A. Informática
-                sempre fui muito bem atendido, muito bem instruído sobre meus
-                hardwares e software, agilidade no atendimento e muita
-                qualidade. Recomendo pois sempre foi um serviço muito bom
+              <h4 class="services-card-title">Reparo em PCs e Notebooks</h4>
+              <p class="services-card-description">
+                Limpeza de hardware’s e CPU Formatação, Instalação de SO,
+                Manutenção e Backup
               </p>
             </div>
-            <div class="swiper-slide">
+            <div class="services-cards-card">
               <img
-                class="carousel-card-image"
-                src="./assets/cliente-2.jpg"
-                alt="Foto de um cliente"
+                class="services-card-image"
+                src="./assets/smartphone.svg"
+                alt="Ilustracao de um celular"
               />
-              <h5 class="carousel-card-title">Bruno Henrique</h5>
-              <p class="carousel-card-description">
-                Sobre a assistência do Pablo eu gostei, comunicação boa, ótimo
-                atendimento e assistência muito boa,entrega seu trabalho no
-                prazo endico ele pra todos meus amigos e parentes, excelente
-                profissional
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="carousel-card-image"
-                src="./assets/cliente-3.jpg"
-                alt="Foto de um cliente"
-              />
-              <h5 class="carousel-card-title">Jesse Springman</h5>
-              <p class="carousel-card-description">
-                Então, só tenho agradecer a seu trabalho bem feito no meu
-                notebook, melhorou100% e um preço muito em conta
+              <h4 class="services-card-title">Reparo em Celulares e Tablets</h4>
+              <p class="services-card-description">
+                Troca de Tela (com ou sem display), Troca de bateria, capas e
+                películas, Manutenção e Backup
               </p>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-      </div>
-    </section>
-    <div class="contact-container">
-      <p class="contact-container-description">
-        Deixe-me cuidar dos seus dispositivos para que você possa se concentrar
-        no que é realmente importante.
-      </p>
-      <a href="" class="btn btn-filled-white">
-        <img src="" alt="" />
-        Fazer orçamento
-      </a>
-    </div>
-    <section id="about">
-      <div class="wrapper">
-        <img
-          src="./assets/pablo-alves-pa-informatica.png"
-          alt="Imagem do assistente técnico Pablo Alves"
-        />
-        <aside class="about-info">
-          <h2>Sobre mim</h2>
-          <h3>Entenda quem eu sou</h3>
-          <p class="about-info-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
-            animi excepturi fuga et minima nihil. Recusandae, soluta. Odio modi
-            reprehenderit deserunt, maiores commodi perspiciatis consequatur
-            eius vel, facere voluptatibus ab?
-          </p>
-          <a href="" class="btn">
-            <img src="./assets/icon-whatsapp.svg" alt="" />
-          </a>
-        </aside>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="wrapper">
-        <aside class="contact-info">
-          <h3>Entre em contato comigo!</h3>
-          <div class="address">
-            <img src="./assets/map-blue.svg" alt="Icone de localização" />
-            <p class="address-text">
-              Rua Bento Toledo Rodovalho, 745 Vila Azenha - Nova Odessa SP
+          <div class="brands-container">
+            <p class="brands-container-description">
+              Atendimento especializado para dispositivos de uma variedade de
+              marcas com as últimas tecnologias e soluções, tais como:
             </p>
+            <div class="brands">
+              <img src="./assets/logo-sony.svg" alt="Logo da empresa Sony" />
+              <img src="./assets/logo-lg.svg" alt="Logo da empresa LG" />
+              <img
+                src="./assets/logo-positivo.svg"
+                alt="Logo da empresa Positivo"
+              />
+              <img src="./assets/logo-apple.svg" alt="Logo da empresa Apple" />
+              <img
+                src="./assets/logo-xiaomi.svg"
+                alt="Logo da empresa Xiaomi"
+              />
+              <img
+                src="./assets/logo-samsung.svg"
+                alt="Logo da empresa Samsung"
+              />
+              <img
+                src="./assets/logo-motorola.svg"
+                alt="Logo da empresa Motorola"
+              />
+            </div>
           </div>
-          <div class="email">
-            <img src="./assets/mail-blue.svg" alt="Icone de email" />
-            <p class="email-text">p.a.tecnicoinformatica@gmail.com</p>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div class="wrapper">
+          <h2>Depoimentos</h2>
+          <h3>O que os clientes dizem sobre meus serviços</h3>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/cliente-1.jpg"
+                  alt="Foto de um cliente"
+                />
+                <h5 class="swiper-slide-title">Murilo Bueno</h5>
+                <p class="swiper-slide-description">
+                  Já formatei e montei meu pc várias vezes na P. A. Informática
+                  sempre fui muito bem atendido, muito bem instruído sobre meus
+                  hardwares e software, agilidade no atendimento e muita
+                  qualidade. Recomendo pois sempre foi um serviço muito bom
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/cliente-2.jpg"
+                  alt="Foto de um cliente"
+                />
+                <h5 class="swiper-slide-title">Bruno Henrique</h5>
+                <p class="swiper-slide-description">
+                  Sobre a assistência do Pablo eu gostei, comunicação boa, ótimo
+                  atendimento e assistência muito boa,entrega seu trabalho no
+                  prazo endico ele pra todos meus amigos e parentes, excelente
+                  profissional
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/cliente-3.jpg"
+                  alt="Foto de um cliente"
+                />
+                <h5 class="swiper-slide-title">Jesse Springman</h5>
+                <p class="swiper-slide-description">
+                  Então, só tenho agradecer a seu trabalho bem feito no meu
+                  notebook, melhorou 100% e um preço muito em conta
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-image"
+                  src="./assets/cliente-4.png"
+                  alt="Foto de um cliente"
+                />
+                <h5 class="swiper-slide-title">Mateus Antonio</h5>
+                <p class="swiper-slide-description">
+                  Meu notebook passou por uma limpeza instalação de um SSD e de
+                  um windows 10 através da P.A. Informática, foi um otimo
+                  serviço, rápido e com um bom custo beneficio
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <a href="">
-            <img src="./assets/icon-whatsapp.svg" alt="Icone do whatsapp" />
-            Fazer orçamento
-          </a>
-        </aside>
-      </div>
-    </section>
+          <div class="container">
+            <p class="container-description">
+              Deixe-me cuidar dos seus dispositivos para que você possa se
+              concentrar no que é realmente importante.
+            </p>
+            <a href="" class="btn btn-filled-white">
+              <img
+                src="./assets/icon-whatsapp-blue.svg"
+                alt="Icone do whatsapp azul"
+              />
+              Fazer orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="wrapper">
+          <img
+            src="./assets/pablo-alves-pa-informatica.png"
+            alt="Imagem do assistente técnico Pablo Alves"
+            class="picture"
+          />
+          <aside class="about-info">
+            <div>
+              <h2>Sobre mim</h2>
+              <h3>Entenda quem eu sou</h3>
+              <p class="about-info-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo, animi excepturi fuga et minima nihil. Recusandae,
+                soluta. Odio modi reprehenderit deserunt, maiores commodi
+                perspiciatis consequatur eius vel, facere voluptatibus ab?
+              </p>
+            </div>
+            <a href="" class="btn btn-filled">
+              <img src="./assets/icon-whatsapp.svg" alt="" />
+              Fazer orçamento
+            </a>
+          </aside>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="wrapper">
+          <aside class="contact-info">
+            <h3>Entre em contato comigo!</h3>
+            <div class="address">
+              <img src="./assets/map-blue.svg" alt="Icone de localização" />
+              <p class="address-text">
+                Rua Bento Toledo Rodovalho, 745 Vila Azenha - Nova Odessa SP
+              </p>
+            </div>
+            <div class="email">
+              <img src="./assets/mail-blue.svg" alt="Icone de email" />
+              <p class="email-text">p.a.tecnicoinformatica@gmail.com</p>
+            </div>
+            <a href="" class="btn btn-filled">
+              <img src="./assets/icon-whatsapp.svg" alt="Icone do whatsapp" />
+              Fazer orçamento
+            </a>
+          </aside>
+          <div class="contact-image">
+            <img
+              src="./assets/ilustracao-contato.svg"
+              alt="Ilustracao de contato"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer id="footer">
       <div class="wrapper">
         <div>
@@ -255,7 +282,7 @@
             <span class="reserved-rights">Todos os direitos reservados</span>
             <span class="develop-by">
               Desenvolvido por
-              <a href="">
+              <a href="https://mateuslopes.netlify.app" target="_blank">
                 &lt;
                 <span class="develop-by-name">Mateus Lopes</span>
                 &frasl;&gt;
@@ -283,5 +310,8 @@
         </ul>
       </div>
     </footer>
+    <a href="#header" class="back-to-top">
+      <img src="./assets/back-to-top.svg" alt="Voltar para topo da pagina" />
+    </a>
   </body>
 </html>
