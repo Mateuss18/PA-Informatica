@@ -35,9 +35,15 @@
 
         a {
           color: variables.$black;
+          margin-left: 8px;
 
           .develop-by-name {
             color: variables.$white-300;
+          }
+
+          &:hover {
+            transition: 400ms;
+            filter: brightness(80%);
           }
         }
       }
@@ -50,6 +56,12 @@
       img {
         width: 24px;
         height: 24px;
+        transition: 400ms;
+
+        &:hover {
+          transition: 400ms;
+          filter: brightness(80%);
+        }
       }
     }
   }
