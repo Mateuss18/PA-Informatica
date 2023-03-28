@@ -8,12 +8,16 @@
     @include mixins.wrapper;
     display: flex;
     justify-content: space-between;
-    padding: 149.54px 1.5625rem;
+    padding: 149.54px 1.5625rem 120px 1.5625rem;
 
     @include mixins.notebook {
       flex-direction: column;
       align-items: center;
       gap: 96px;
+    }
+
+    @include mixins.tablet {
+      gap: 50px;
     }
 
     .header-content {
@@ -28,12 +32,20 @@
         font-size: 0.9375rem;
         font-weight: 700;
         margin-bottom: 20px;
+
+        @include mixins.tablet {
+          font-size: 0.875rem;
+        }
       }
 
       &-title {
         color: variables.$blue-text-h3;
         font-size: 3rem;
         font-weight: 700;
+
+        @include mixins.tablet {
+          font-size: 2rem;
+        }
       }
 
       &-description {
@@ -41,6 +53,11 @@
         font-size: 1.125rem;
         font-weight: 400;
         margin: 47px 0 52px 0;
+
+        @include mixins.tablet {
+          font-size: 1rem;
+          margin: 32px 0 28px 0;
+        }
       }
     }
 
@@ -49,6 +66,10 @@
 
       @include mixins.notebook {
         width: fit-content;
+      }
+
+      @include mixins.tablet {
+        width: 25rem;
       }
     }
   }

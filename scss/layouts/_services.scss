@@ -58,6 +58,10 @@
         font-weight: 700;
         color: variables.$black;
         margin: 100px 0 60px 0;
+
+        @include mixins.notebook {
+          width: fit-content;
+        }
       }
 
       .brands {
@@ -66,6 +70,10 @@
         flex-wrap: wrap;
         gap: 30px 50px;
         width: 43.75rem;
+
+        @include mixins.tablet {
+          width: fit-content;
+        }
 
         img {
           width: fit-content;

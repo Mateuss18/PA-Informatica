@@ -17,6 +17,12 @@
     gap: 30px;
   }
 
+  @include mixins.tablet {
+    padding: 50px 50px;
+    margin-top: 60px;
+    top: 0;
+  }
+
   &:before {
     content: " ";
     display: block;
@@ -40,6 +46,10 @@
 
     @include mixins.notebook {
       width: fit-content;
+    }
+
+    @include mixins.tablet {
+      font-size: 1.25rem;
     }
   }
 

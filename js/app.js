@@ -27,10 +27,11 @@ const swiper = new Swiper(swiperCarousel, {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2
+      slidesPerView: 1,
+      spaceBetween: 0
     },
     // when window width is >= 480px
-    1024: {
+    750: {
       slidesPerView: 2
     },
     // when window width is >= 640px

@@ -41,6 +41,12 @@
           margin-bottom: 15px;
         }
       }
+
+      &-image {
+        @include mixins.tablet {
+          width: 460px;
+        }
+      }
     }
 
     .btn {
