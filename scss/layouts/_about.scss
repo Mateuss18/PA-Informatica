@@ -20,10 +20,9 @@
     }
 
     .picture {
-      width: 29.375rem;
-
       img {
         border-radius: 10px;
+        width: 450px;
       }
 
       @include mixins.notebook {
