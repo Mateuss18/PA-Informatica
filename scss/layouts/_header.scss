@@ -71,6 +71,10 @@
       @include mixins.tablet {
         width: 25rem;
       }
+
+      @include mixins.mobile {
+        width: fit-content;
+      }
     }
   }
 }

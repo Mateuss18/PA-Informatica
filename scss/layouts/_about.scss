@@ -21,7 +21,10 @@
 
     .picture {
       width: 29.375rem;
-      border-radius: 10px;
+
+      img {
+        border-radius: 10px;
+      }
 
       @include mixins.notebook {
         width: fit-content;
@@ -29,6 +32,10 @@
 
       @include mixins.tablet {
         width: 400px;
+      }
+
+      @include mixins.mobile {
+        width: fit-content;
       }
     }
 

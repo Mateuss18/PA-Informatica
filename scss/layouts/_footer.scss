@@ -11,39 +11,51 @@
     justify-content: space-between;
     align-items: center;
 
-    img {
-      width: fit-content;
+    @include mixins.mobile {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
     }
 
-    p {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 22px;
-
-      .copy,
-      .reserved-rights {
-        font-size: 0.875rem;
-        font-weight: 400;
-        color: variables.$blue-100;
+    .top {
+      @include mixins.mobile {
+        text-align: center;
       }
 
-      .develop-by {
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: variables.$blue-100;
+      img {
+        width: fit-content;
+      }
 
-        a {
-          color: variables.$black;
-          margin-left: 8px;
+      p {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 22px;
 
-          .develop-by-name {
-            color: variables.$white-300;
-          }
+        .copy,
+        .reserved-rights {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: variables.$blue-100;
+        }
 
-          &:hover {
-            transition: 400ms;
-            filter: brightness(80%);
+        .develop-by {
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: variables.$blue-100;
+
+          a {
+            color: variables.$black;
+            margin-left: 8px;
+
+            .develop-by-name {
+              color: variables.$white-300;
+            }
+
+            &:hover {
+              transition: 400ms;
+              filter: brightness(80%);
+            }
           }
         }
       }

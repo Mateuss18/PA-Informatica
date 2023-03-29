@@ -8,6 +8,11 @@
 html {
   scroll-behavior: smooth;
 }
+@media (max-width: 740px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -232,6 +237,11 @@ img {
     width: 25rem;
   }
 }
+@media (max-width: 464px) {
+  #header .wrapper .header-image {
+    width: fit-content;
+  }
+}
 
 #services {
   background-color: #f9f9f9;
@@ -292,6 +302,11 @@ img {
   padding: 32px;
   background-color: #1971c2;
   transition: 450ms;
+}
+@media (max-width: 464px) {
+  #services .wrapper .services-cards-card {
+    width: fit-content;
+  }
 }
 #services .wrapper .services-cards-card:hover {
   transition: 450ms;
@@ -554,6 +569,8 @@ img {
 }
 #about .wrapper .picture {
   width: 29.375rem;
+}
+#about .wrapper .picture img {
   border-radius: 10px;
 }
 @media (max-width: 1110px) {
@@ -564,6 +581,11 @@ img {
 @media (max-width: 740px) {
   #about .wrapper .picture {
     width: 400px;
+  }
+}
+@media (max-width: 464px) {
+  #about .wrapper .picture {
+    width: fit-content;
   }
 }
 #about .wrapper .about-info {
@@ -595,6 +617,11 @@ img {
     flex-direction: column;
   }
 }
+@media (max-width: 740px) {
+  #contact .wrapper {
+    padding: 72px 1.5625rem;
+  }
+}
 #contact .wrapper .contact-info h3 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -621,6 +648,11 @@ img {
     width: 400px;
   }
 }
+@media (max-width: 464px) {
+  #contact .wrapper .contact-image {
+    width: fit-content;
+  }
+}
 #contact .wrapper .btn {
   margin-top: 35px;
 }
@@ -636,34 +668,46 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-#footer .wrapper img {
+@media (max-width: 464px) {
+  #footer .wrapper {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media (max-width: 464px) {
+  #footer .wrapper .top {
+    text-align: center;
+  }
+}
+#footer .wrapper .top img {
   width: fit-content;
 }
-#footer .wrapper p {
+#footer .wrapper .top p {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 22px;
 }
-#footer .wrapper p .copy,
-#footer .wrapper p .reserved-rights {
+#footer .wrapper .top p .copy,
+#footer .wrapper .top p .reserved-rights {
   font-size: 0.875rem;
   font-weight: 400;
   color: #f0f9ff;
 }
-#footer .wrapper p .develop-by {
+#footer .wrapper .top p .develop-by {
   font-size: 0.875rem;
   font-weight: 500;
   color: #f0f9ff;
 }
-#footer .wrapper p .develop-by a {
+#footer .wrapper .top p .develop-by a {
   color: #0a0a0a;
   margin-left: 8px;
 }
-#footer .wrapper p .develop-by a .develop-by-name {
+#footer .wrapper .top p .develop-by a .develop-by-name {
   color: #f9f9f9;
 }
-#footer .wrapper p .develop-by a:hover {
+#footer .wrapper .top p .develop-by a:hover {
   transition: 400ms;
   filter: brightness(80%);
 }
