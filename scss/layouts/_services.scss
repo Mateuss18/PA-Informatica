@@ -12,6 +12,11 @@
       justify-content: center;
       gap: 50px;
 
+      @include mixins.tablet {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+      }
+
       &-card {
         display: flex;
         gap: 20px;
