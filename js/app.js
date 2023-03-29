@@ -1,7 +1,28 @@
 window.addEventListener('scroll', showBackToTopButtonOnScroll)
 
 const backToTopButton = document.querySelector('.back-to-top')
-console.log(backToTopButton)
+const swiperCarousel = document.querySelector('.swiper')
+const menuElement = document.querySelector('.menu')
+const menuButton = document.querySelector('.btn-reset')
+
+const closeAndOpenMenu = () => {
+  menuElement.classList.toggle('active')
+  menuButton.classList.toggle('close-btn')
+}
+
+const closeMenu = () => {
+  menuElement.classList.remove('active')
+  menuButton.classList.remove('close-btn')
+}
+
+menuButton.addEventListener('click', closeAndOpenMenu)
+
+backToTopButton.addEventListener('click', closeMenu)
+
+document
+  .querySelectorAll('#navbar .menu li')
+  .forEach((el) => el.addEventListener('click', closeMenu))
+
 function showBackToTopButtonOnScroll() {
   if (scrollY > 400) {
     backToTopButton.classList.add('show')
@@ -12,7 +33,6 @@ function showBackToTopButtonOnScroll() {
   }
 }
 
-const swiperCarousel = document.querySelector('.swiper')
 const swiper = new Swiper(swiperCarousel, {
   slidesPerView: 3,
   spaceBetween: 10,
@@ -35,9 +55,11 @@ const swiper = new Swiper(swiperCarousel, {
       slidesPerView: 2
     },
     // when window width is >= 640px
-    1025: {
+    1110: {
       slidesPerView: 3,
       spaceBetween: 35
     }
   }
 })
+
+closeAndOpenMenu()
