@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="author" content="Mateus Antonio Rodrigues Lopes" />
     <meta
       name="description"
-      content="Assistencia Técnica Especializada para computadores e celulares na região de Nova Odessa"
+      content="Assistencia Técnica Especializada para computadores e celulares na região de Nova Odessa com o melhor cursto benefício"
     />
+    <meta
+      name="keywords"
+      content="assistencia, Assistência técnica, Celulares, Smartphones, Tablets, Computadores, Notebooks, Reparo, Manutenção, Troca de peças, Conserto, Problemas técnicos, Atendimento ao cliente, Suporte técnico, Diagnosticar, Solução de problemas, Hardware, Software, nova odessa, barato, remoção de virus, formatação, atualização de sistema, limpeza completa, melhora de performace, backup, intalação de peças"
+    />
+    <meta name="theme-color" content="#1971C2" />
+    <meta name="copyright" content="PA Informática 2023" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+
+    <!-- GOOGLE FONTS - DM SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/app.css" />
-    <title>PA Informática - Assistencia Tecnica</title>
+    <title>PA Informática - Assistência Técnica</title>
     <!-- SWIPER -->
     <link
       rel="stylesheet"
@@ -27,7 +41,7 @@
   <body>
     <nav id="navbar">
       <div class="wrapper">
-        <a class="logo">
+        <a href="#header" class="logo">
           <img
             src="./assets/logo-pa-informatica.svg"
             alt="Logo PA Informática"
@@ -50,9 +64,7 @@
             <a href="#contact">Contato</a>
           </li>
         </ul>
-        <button class="btn-reset">
-          <img src="./assets/menu-mobile.svg" alt="menu mobile" />
-        </button>
+        <button class="btn-reset menu-btn"></button>
       </div>
     </nav>
     <header id="header">
@@ -162,8 +174,8 @@
                 <h5 class="swiper-slide-title">Bruno Henrique</h5>
                 <p class="swiper-slide-description">
                   Sobre a assistência do Pablo eu gostei, comunicação boa, ótimo
-                  atendimento e assistência muito boa,entrega seu trabalho no
-                  prazo endico ele pra todos meus amigos e parentes, excelente
+                  atendimento e assistência muito boa, entrega seu trabalho no
+                  prazo indico ele pra todos meus amigos e parentes, excelente
                   profissional
                 </p>
               </div>
@@ -244,11 +256,12 @@
       </section>
       <section id="about">
         <div class="wrapper">
-          <img
-            src="./assets/pablo-alves-pa-informatica.jpg"
-            alt="Imagem do assistente técnico Pablo Alves"
-            class="picture"
-          />
+          <div class="picture">
+            <img
+              src="./assets/pablo-alves-pa-informatica.jpg"
+              alt="Imagem do assistente técnico Pablo Alves"
+            />
+          </div>
           <aside class="about-info">
             <div>
               <h2>Sobre mim</h2>
@@ -311,11 +324,13 @@
     </main>
     <footer id="footer">
       <div class="wrapper">
-        <div>
-          <img
-            src="./assets/logo-pa-informatica-white.svg"
-            alt="Logo PA Informatica branco"
-          />
+        <div class="top">
+          <a href="#header">
+            <img
+              src="./assets/logo-pa-informatica-white.svg"
+              alt="Logo PA Informatica branco"
+            />
+          </a>
           <p>
             <span class="copy">&copy; 2023 - P.A. Informática</span>
             <span class="reserved-rights">Todos os direitos reservados</span>
