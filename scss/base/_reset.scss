@@ -75,7 +75,7 @@ img {
 
 .show {
   opacity: 1;
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .hidden {

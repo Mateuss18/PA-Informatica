@@ -22,6 +22,11 @@
         border: solid 2px transparent;
         transition: border 400ms;
 
+        @include mixins.mobile {
+          height: fit-content;
+          min-height: 460px;
+        }
+
         &:hover {
           border-color: variables.$blue-600;
         }
@@ -52,6 +57,10 @@
 
     .swiper-pagination {
       top: 450px !important;
+
+      @include mixins.mobile {
+        top: 510px !important;
+      }
     }
   }
 }

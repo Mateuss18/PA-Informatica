@@ -16,7 +16,6 @@ const closeMenu = () => {
 }
 
 menuButton.addEventListener('click', closeAndOpenMenu)
-
 backToTopButton.addEventListener('click', closeMenu)
 
 document
@@ -43,23 +42,17 @@ const swiper = new Swiper(swiperCarousel, {
   pagination: {
     el: '.swiper-pagination'
   },
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 15
     },
-    // when window width is >= 480px
     750: {
       slidesPerView: 2
     },
-    // when window width is >= 640px
     1110: {
       slidesPerView: 3,
       spaceBetween: 35
     }
   }
 })
-
-closeAndOpenMenu()

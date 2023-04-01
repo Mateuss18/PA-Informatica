@@ -20,21 +20,21 @@
     }
 
     .picture {
-      img {
-        border-radius: 10px;
-        width: 450px;
-      }
-
       @include mixins.notebook {
         width: fit-content;
       }
 
-      @include mixins.tablet {
-        width: 400px;
-      }
+      img {
+        border-radius: 10px;
+        width: 450px;
 
-      @include mixins.mobile {
-        width: fit-content;
+        @include mixins.tablet {
+          width: 400px;
+        }
+
+        @include mixins.mobile {
+          width: 100%;
+        }
       }
     }
 

@@ -124,10 +124,6 @@
           transition: 450ms;
           background-color: variables.$blue-600;
 
-          @include mixins.mobile {
-            width: fit-content;
-          }
-
           &:hover {
             transition: 450ms;
             transform: scale(1.05);
