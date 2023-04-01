@@ -43,7 +43,8 @@ img {
   transition: 400ms;
 
   img {
-    width: 24px;
+    width: 22px;
+    height: 22px;
     transition: 400ms;
   }
 }
@@ -67,6 +68,8 @@ img {
     transition: 400ms;
 
     img {
+      width: 22px;
+      height: 22px;
       transition: 400ms;
       filter: invert(32%) sepia(89%) saturate(1061%) hue-rotate(184deg) brightness(65%) contrast(91%);
     }
