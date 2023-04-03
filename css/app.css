@@ -310,18 +310,21 @@ img {
     font-size: 0.875rem;
   }
 }
-#services .wrapper .cards-services, #services .wrapper .cards-devices {
+#services .wrapper .cards-services,
+#services .wrapper .cards-devices {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#services .wrapper .cards-services-card, #services .wrapper .cards-devices-card {
+#services .wrapper .cards-services-card,
+#services .wrapper .cards-devices-card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#services .wrapper .cards-services-card img, #services .wrapper .cards-devices-card img {
+#services .wrapper .cards-services-card img,
+#services .wrapper .cards-devices-card img {
   width: fit-content;
 }
 #services .wrapper .cards-services {
@@ -542,7 +545,7 @@ img {
 }
 @media (max-width: 464px) {
   #testimonial .wrapper .swiper-pagination {
-    top: 510px !important;
+    top: 470px !important;
   }
 }
 
